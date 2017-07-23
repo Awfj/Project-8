@@ -1,0 +1,44 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.u-clearfix:before, .u-clearfix:after {
+	content: ' ';
+	display: table;
+}
+.u-clearfix:after {
+	clear: both;
+}
+
+// -------------------------------------------
+
+$c-main: #4cb1ca;
+$c-secondary: #7db122;
+$c-background: #fff;
+$c-text: #656565; 
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+.o-wrapper {
+	width: 1030px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.o-transition {
+	transition: all .3s ease-in-out;
+}
+@mixin background($color, $image) {
+	background-color: $color;
+	background-image: $image;
+}
+.background-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

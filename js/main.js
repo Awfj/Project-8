@@ -55,5 +55,16 @@ $(function() {
 		}
 	});
 
+	$('.header--slider').slick({
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		prevArrow:"<span class='fa-stack fa-lg header__prev'><i class='header__prev--circle fa fa-circle fa-stack-2x'></i><i class='header__prev--icon fa fa-angle-left fa-stack-1x'></i></span>",
+		nextArrow:"<span class='fa-stack fa-lg header__next'><i class='header__next--circle fa fa-circle fa-stack-2x'></i><i class='header__next--icon fa fa-angle-right fa-stack-1x'></i></span>"
+	});
 
+	$('.aside__featured--slider').slick({
+		dots: true,
+		arrows: false
+	});
 });

@@ -1,5 +1,8 @@
 @media only screen and (max-width: 1024px) {
 	//---------------HEADER----------------
+	.header--main {
+		padding: 1.5em 0;
+	}
 	.header__nav-main--links {
 		width: 100%;
 		order: 3;
@@ -17,9 +20,15 @@
 	}
 	.header__nav-main--misc {
 		order: 2;
+		input[type='submit'] {
+			margin-right: .5em;
+		}
+		.coupons, .cart {
+			display: none;
+		}
 	}
 
-	.main--aside {
+	.aside {
 		display: none;
 	}
 	.main__table--cell {
@@ -27,11 +36,13 @@
 	}
 
 	.footer__calls--order, .footer__calls--call {
+		padding: .5em 0;
 		.main_-cell--icon {
-			font-size: 2.3em;
+			display: none;
 		}
-		p {
-			font-size: 1.05em;
+		h4 {
+			font-size: 1.1em;
+			margin: auto;
 		}
 	}
 }
@@ -101,18 +112,20 @@
 			border-right: none;
 			width: 200px;
 		}
-		input[type='submit'] {
-			margin-right: .5em;
-		}
-		.coupons, .cart {
-			display: none;
-		}
 	}
 	.header__banner {
-		display: none;
+		height: 300px;
+	}
+	.header__banner--title {
+		h1, h2 {
+			font-size: 1.5em;
+		}
+		h1 {
+			width: 217px;
+		}
 	}
 	.header__prev, .header__next {
-		display: none;
+		font-size: 1.7em;
 	}
 
 	.footer--calls {
@@ -130,5 +143,20 @@
 		input[type='submit'] {
 			margin-right: 0;
 		}
+	}
+
+	.header__banner {
+		height: 250px;
+	}
+	.header__banner--title {
+		h1, h2 {
+			font-size: 1.2em;
+		}
+		h1 {
+			width: 173px;
+		}
+	}
+	.header__prev, .header__next {
+		display: none;
 	}
 }

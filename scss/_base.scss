@@ -42,3 +42,28 @@ a {
 	background-size: cover;
 	background-position: center;
 }
+.o-overlay {
+	height: 100%;
+}
+.header--slider .slick-dots {
+	bottom: 15px;
+	li {
+		button {
+			&:before {
+				font-size: 10px;
+			}
+		}
+	}
+}
+.aside .slick-dots {
+	bottom: -19px;
+	li {
+		button {
+			color: red;
+			&:before {
+				font-size: 13px;
+				color: $c-main;	
+			}
+		}
+	}
+}

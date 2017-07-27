@@ -40,14 +40,14 @@ a {
 .header--slider .slick-dots {
   bottom: 15px; }
   .header--slider .slick-dots li button:before {
-    font-size: 10px; }
+    font-size: 35px; }
 
 .aside .slick-dots {
   bottom: -19px; }
   .aside .slick-dots li button {
     color: red; }
     .aside .slick-dots li button:before {
-      font-size: 13px;
+      font-size: 45px;
       color: #4cb1ca; }
 
 .header--sec {

@@ -18,6 +18,8 @@ $c-secondary: #7db122;
 $c-background: #fff;
 $c-text: #656565;
 $c-banner-1: #D8C20E;
+$c-banner-2: #F39016;
+$c-banner-3: #F31616;
 @mixin o-background($color, $image) {
 	background-color: $color;
 	background-image: $image;
@@ -36,18 +38,6 @@ a {
 .o-transition {
 	transition: all .3s ease-in-out;
 }
-.o-overlay {
+.header__banner--overlay, .o-overlay {
 	height: 100%;
-}
-.aside .slick-dots {
-	bottom: -19px;
-	li {
-		button {
-			color: red;
-			&:before {
-				font-size: 45px;
-				color: $c-main;	
-			}
-		}
-	}
 }

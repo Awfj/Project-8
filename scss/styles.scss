@@ -145,7 +145,7 @@
 }
 .header__banner {
 	@include o-background (
-		$c-banner-1,
+		$c-background,
 		url(../images/banner-2.png));
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -154,23 +154,22 @@
 	height: 450px;
 	width: 100%;
 	.header__banner--overlay {
-		height: 100%;
 		opacity: 0.5;
 	}
 }
 .header__banner--one {
 	.header__banner--overlay {
-		background-color: yellow;
+		background-color: $c-banner-1;
 	}
 }
 .header__banner--two {
 	.header__banner--overlay {
-		background-color: orange;
+		background-color: $c-banner-2;
 	}
 }
 .header__banner--three {
 	.header__banner--overlay {
-		background-color: red;
+		background-color: $c-banner-3;
 	}
 }
 .header__banner--title {
@@ -179,12 +178,12 @@
 	top: 50%;
 	transform: translateY(-50%);
 	h1, h2 {
+		background-color: rgba(black, .5);
+		color: $c-background;
 		margin: 0;
 		padding: .3em .5em;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: $c-background;
-		background-color: rgba(black, .5);
 	}
 	h1 {
 		font-weight: 300;
@@ -205,10 +204,10 @@
 		color: $c-background;
 	}
 	.header__prev--icon, .header__next--icon {
-		font-size: 1.5em;
 		position: absolute;
 		left: 50%;
 		color: $c-text;
+		font-size: 1.5em;
 		cursor: pointer;
 		border-radius: 50%;
 		@extend .o-transition;
@@ -234,10 +233,10 @@
 .main-wrapper {
 	display: flex;
 	h3 {
-		font-weight: 400;
-		text-transform: uppercase;
 		color: $c-text;
 		font-size: 1.5em;
+		font-weight: 400;
+		text-transform: uppercase;
 	}
 }
 .main {
@@ -252,8 +251,8 @@
 .main__table--cell {
 	width: 32%;
 	margin: 0 0 1em;
-	text-align: center;
 	padding: .5em;
+	text-align: center;
 	box-shadow: 0 0 1px #888888;
 	img {
 		max-width: 100%;
@@ -286,10 +285,10 @@
 			font-size: 2.3em;
 		}
 		.fa-shopping-basket {
-			border-radius: 50%;
-			color: $c-background;
 			position: relative;
 			top: 5.4%;
+			color: $c-background;
+			border-radius: 50%;
 			@extend .o-transition;
 			&:hover {
 				background-color: $c-main;
@@ -319,32 +318,34 @@
 	}
 }
 .aside--featured, .aside--signup {
-	box-shadow: 0 0 3px grey;
-	border-top: 5px solid $c-main;
 	padding-bottom: .1em;
+	border-top: 5px solid $c-main;
+	box-shadow: 0 0 3px grey;
 }
 .aside__featured--slider {
 	width: 250px;
 }
 .aside__slider {
+	position: relative;
 	height: 350px;
-	margin: 1em;
-	background-image: url("../images/featured.png");
+	@include o-background (
+		$c-background,
+		url(../images/featured.png));
+	background-position: center -10px;
 	background-repeat: no-repeat;
 	background-size: 400px;
-	background-position: center -10px;
-	position: relative;
+	margin: 1em;
 	text-align: center;
 	a {
-		background-color: $c-main;
-		color: $c-background;
-		padding: .8em 0em;
-		margin-bottom: 1.3em;
+		width: 70%;
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		width: 70%;
 		transform: translateX(-50%);
+		background-color: $c-main;
+		color: $c-background;
+		margin-bottom: 1.3em;
+		padding: .8em 0em;
 		@extend .o-transition;
 		&:hover {
 			background-color: $c-secondary;

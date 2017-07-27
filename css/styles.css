@@ -29,16 +29,8 @@ a {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
-.o-overlay {
+.header__banner--overlay, .o-overlay {
   height: 100%; }
-
-.aside .slick-dots {
-  bottom: -19px; }
-  .aside .slick-dots li button {
-    color: red; }
-    .aside .slick-dots li button:before {
-      font-size: 45px;
-      color: #4cb1ca; }
 
 .header--sec {
   background-color: #4cb1ca;
@@ -188,7 +180,7 @@ a {
     font-size: 35px; }
 
 .header__banner {
-  background-color: #D8C20E;
+  background-color: #fff;
   background-image: url(../images/banner-2.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,17 +189,16 @@ a {
   height: 450px;
   width: 100%; }
   .header__banner .header__banner--overlay {
-    height: 100%;
     opacity: 0.5; }
 
 .header__banner--one .header__banner--overlay {
-  background-color: yellow; }
+  background-color: #D8C20E; }
 
 .header__banner--two .header__banner--overlay {
-  background-color: orange; }
+  background-color: #F39016; }
 
 .header__banner--three .header__banner--overlay {
-  background-color: red; }
+  background-color: #F31616; }
 
 .header__banner--title {
   position: absolute;
@@ -217,12 +208,12 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
   .header__banner--title h1, .header__banner--title h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     margin: 0;
     padding: .3em .5em;
     font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); }
+    text-transform: uppercase; }
   .header__banner--title h1 {
     font-weight: 300;
     margin-bottom: .1em;
@@ -241,10 +232,10 @@ a {
   .header__prev .header__prev--circle, .header__prev .header__next--circle, .header__next .header__prev--circle, .header__next .header__next--circle {
     color: #fff; }
   .header__prev .header__prev--icon, .header__prev .header__next--icon, .header__next .header__prev--icon, .header__next .header__next--icon {
-    font-size: 1.5em;
     position: absolute;
     left: 50%;
     color: #656565;
+    font-size: 1.5em;
     cursor: pointer;
     border-radius: 50%; }
     .header__prev .header__prev--icon:hover, .header__prev .header__next--icon:hover, .header__next .header__prev--icon:hover, .header__next .header__next--icon:hover {
@@ -270,10 +261,10 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .main-wrapper h3 {
-    font-weight: 400;
-    text-transform: uppercase;
     color: #656565;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase; }
 
 .main {
   -webkit-box-flex: 3.5;
@@ -298,8 +289,8 @@ a {
 .main__table--cell {
   width: 32%;
   margin: 0 0 1em;
-  text-align: center;
   padding: .5em;
+  text-align: center;
   -webkit-box-shadow: 0 0 1px #888888;
   box-shadow: 0 0 1px #888888; }
   .main__table--cell img {
@@ -328,10 +319,10 @@ a {
       color: #7db122;
       font-size: 2.3em; }
     .main_-cell .main_-cell--icon .fa-shopping-basket {
-      border-radius: 50%;
-      color: #fff;
       position: relative;
-      top: 5.4%; }
+      top: 5.4%;
+      color: #fff;
+      border-radius: 50%; }
       .main_-cell .main_-cell--icon .fa-shopping-basket:hover {
         background-color: #4cb1ca; }
 
@@ -353,35 +344,36 @@ a {
         color: #4cb1ca; }
 
 .aside--featured, .aside--signup {
-  -webkit-box-shadow: 0 0 3px grey;
-  box-shadow: 0 0 3px grey;
+  padding-bottom: .1em;
   border-top: 5px solid #4cb1ca;
-  padding-bottom: .1em; }
+  -webkit-box-shadow: 0 0 3px grey;
+  box-shadow: 0 0 3px grey; }
 
 .aside__featured--slider {
   width: 250px; }
 
 .aside__slider {
+  position: relative;
   height: 350px;
-  margin: 1em;
-  background-image: url("../images/featured.png");
+  background-color: #fff;
+  background-image: url(../images/featured.png);
+  background-position: center -10px;
   background-repeat: no-repeat;
   background-size: 400px;
-  background-position: center -10px;
-  position: relative;
+  margin: 1em;
   text-align: center; }
   .aside__slider a {
-    background-color: #4cb1ca;
-    color: #fff;
-    padding: .8em 0em;
-    margin-bottom: 1.3em;
+    width: 70%;
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 70%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    background-color: #4cb1ca;
+    color: #fff;
+    margin-bottom: 1.3em;
+    padding: .8em 0em; }
     .aside__slider a:hover {
       background-color: #7db122; }
   .aside__slider .o-overlay {

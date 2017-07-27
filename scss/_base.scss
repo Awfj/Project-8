@@ -13,47 +13,31 @@ html {
 }
 
 // -------------------------------------------
-
 $c-main: #4cb1ca;
 $c-secondary: #7db122;
 $c-background: #fff;
-$c-text: #656565; 
-
+$c-text: #656565;
+$c-banner-1: #D8C20E;
+@mixin o-background($color, $image) {
+	background-color: $color;
+	background-image: $image;
+}
 html {
 	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
 }
 .o-wrapper {
 	width: 1030px;
 	max-width: 90%;
 	margin: 0 auto;
 }
-a {
-	text-decoration: none;
-}
 .o-transition {
 	transition: all .3s ease-in-out;
 }
-@mixin background($color, $image) {
-	background-color: $color;
-	background-image: $image;
-}
-.background-image {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
 .o-overlay {
 	height: 100%;
-}
-.header--slider .slick-dots {
-	bottom: 15px;
-	li {
-		button {
-			&:before {
-				font-size: 35px;
-			}
-		}
-	}
 }
 .aside .slick-dots {
 	bottom: -19px;

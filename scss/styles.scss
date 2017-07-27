@@ -40,8 +40,8 @@
 			display: inline-block;
 			color: $c-background;
 			font-size: 0.9em;
-			padding: .3em;
 			margin: auto;
+			padding: .3em;
 			@extend .o-transition;
 			&:hover {
 				opacity: 0.6;
@@ -59,11 +59,11 @@
 }
 .header__respons--btn {
 	display: none;
-	font-size: 2.1em;
 	background-color: $c-main;
 	color: $c-background;
-	border: none;
+	font-size: 2.1em;
 	cursor: pointer;
+	border: none;
 }
 .header__nav-main {
 	display: flex;
@@ -84,9 +84,9 @@
 		a {
 			display: inline-block;
 			color: $c-text;
-			font-weight: 700;
-			font-size: 0.9em;
 			padding: .8em;
+			font-size: 0.9em;
+			font-weight: 700;
 			text-transform: uppercase;
 			@extend .o-transition;
 			&:hover {
@@ -102,26 +102,26 @@
 		border: 1px solid grey;
 	}
 	input[type='text'] {
-		border-right: none;
 		width: 140px;
+		border-right: none;
 	}
 	input[type='submit'] {
-		border-left: none;
 		background-color: $c-background;
-		background-image: url("..//images//search.png");
+		background-image: url(..//images//search.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-right: 1em;
 		padding-right: 1.5em;
 		cursor: pointer;
+		border-left: none;
 	}
 	.coupons, .cart {
 		a {
-			padding: .55em;
-			border-radius: 50%;
-			border: none;
 			background-color: $c-secondary;
 			margin-right: .3em;
+			padding: .55em;
+			border: none;
+			border-radius: 50%;
 			img {
 				width: 20px;
 				position: relative;
@@ -131,12 +131,25 @@
 	}
 }
 
+.header--slider {
+	.slick-dots {
+		bottom: 15px;
+		li {
+			button {
+				&:before {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+}
 .header__banner {
-	background-image: url("../images/banner-1.png");
+	@include o-background (
+		$c-banner-1,
+		url(../images/banner-2.png));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
-	display: inline-block;
 	position: relative;
 	height: 450px;
 	width: 100%;
@@ -291,6 +304,18 @@
 	text-align: center;
 	h3 {
 		margin: .9em 0;
+	}
+	.slick-dots {
+		bottom: -19px;
+		li {
+			button {
+				color: red;
+				&:before {
+					font-size: 45px;
+					color: $c-main;	
+				}
+			}
+		}
 	}
 }
 .aside--featured, .aside--signup {

@@ -16,31 +16,21 @@ html {
 html {
   font-family: 'Open Sans', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .o-wrapper {
   width: 1030px;
   max-width: 90%;
   margin: 0 auto; }
-
-a {
-  text-decoration: none; }
 
 .o-transition, .header__nav-sec--links li a, .header__nav-main--links li a, .header__nav-main--misc li a, .header__prev .header__prev--icon, .header__prev .header__next--icon, .header__next .header__prev--icon, .header__next .header__next--icon, .main_-cell .main_-cell--icon .fa-shopping-basket, .aside__slider a, .aside--signup input[type="submit"], .footer__main--twitter .footer__twitter--icon .fa-twitter, .footer__main--contact .footer_-contact--icon .fa-google-plus, .footer__main--contact .footer_-contact--icon .fa-linkedin, .footer__main--contact .footer_-contact--icon .fa-rss, .footer__main--contact .footer_-contact--icon .fa-facebook {
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
-.background-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
 .o-overlay {
   height: 100%; }
-
-.header--slider .slick-dots {
-  bottom: 15px; }
-  .header--slider .slick-dots li button:before {
-    font-size: 35px; }
 
 .aside .slick-dots {
   bottom: -19px; }
@@ -95,8 +85,8 @@ a {
       display: inline-block;
       color: #fff;
       font-size: 0.9em;
-      padding: .3em;
-      margin: auto; }
+      margin: auto;
+      padding: .3em; }
       .header__nav-sec--links li a:hover {
         opacity: 0.6; }
 
@@ -115,11 +105,11 @@ a {
 
 .header__respons--btn {
   display: none;
-  font-size: 2.1em;
   background-color: #4cb1ca;
   color: #fff;
-  border: none;
-  cursor: pointer; }
+  font-size: 2.1em;
+  cursor: pointer;
+  border: none; }
 
 .header__nav-main {
   display: -webkit-box;
@@ -153,9 +143,9 @@ a {
     .header__nav-main--links li a, .header__nav-main--misc li a {
       display: inline-block;
       color: #656565;
-      font-weight: 700;
-      font-size: 0.9em;
       padding: .8em;
+      font-size: 0.9em;
+      font-weight: 700;
       text-transform: uppercase; }
       .header__nav-main--links li a:hover, .header__nav-main--misc li a:hover {
         background-color: #4cb1ca;
@@ -166,25 +156,25 @@ a {
   border: 1px solid grey; }
 
 .header__nav-main--misc input[type='text'] {
-  border-right: none;
-  width: 140px; }
+  width: 140px;
+  border-right: none; }
 
 .header__nav-main--misc input[type='submit'] {
-  border-left: none;
   background-color: #fff;
-  background-image: url("..//images//search.png");
+  background-image: url(..//images//search.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 1em;
   padding-right: 1.5em;
-  cursor: pointer; }
+  cursor: pointer;
+  border-left: none; }
 
 .header__nav-main--misc .coupons a, .header__nav-main--misc .cart a {
-  padding: .55em;
-  border-radius: 50%;
-  border: none;
   background-color: #7db122;
-  margin-right: .3em; }
+  margin-right: .3em;
+  padding: .55em;
+  border: none;
+  border-radius: 50%; }
   .header__nav-main--misc .coupons a img, .header__nav-main--misc .cart a img {
     width: 20px;
     position: relative;
@@ -192,12 +182,17 @@ a {
     -ms-transform: translateY(10%);
     transform: translateY(10%); }
 
+.header--slider .slick-dots {
+  bottom: 15px; }
+  .header--slider .slick-dots li button:before {
+    font-size: 35px; }
+
 .header__banner {
-  background-image: url("../images/banner-1.png");
+  background-color: #D8C20E;
+  background-image: url(../images/banner-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  display: inline-block;
   position: relative;
   height: 450px;
   width: 100%; }
@@ -349,6 +344,13 @@ a {
   text-align: center; }
   .aside h3 {
     margin: .9em 0; }
+  .aside .slick-dots {
+    bottom: -19px; }
+    .aside .slick-dots li button {
+      color: red; }
+      .aside .slick-dots li button:before {
+        font-size: 45px;
+        color: #4cb1ca; }
 
 .aside--featured, .aside--signup {
   -webkit-box-shadow: 0 0 3px grey;

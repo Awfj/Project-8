@@ -55,6 +55,14 @@ $(function() {
 		}
 	});
 
+
+	//----------------MAIN-------------------
+	$('.main__table--btn').click(function() {
+		$('.main__table--btn').hide();
+		$('.main__table--cell:nth-child(n+3)').fadeIn(1000);
+	});
+
+
 	$('.header--slider').slick({
 		dots: true,
 		autoplay: true,

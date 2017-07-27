@@ -45,6 +45,28 @@
 			margin: auto;
 		}
 	}
+
+	.footer__main--facebook {
+		display: none;
+	}
+	.footer__main--contact {
+		.footer_-contact--icon {
+			font-size: 1.1em;
+		}
+	}
+	.footer--copy {
+		padding: 1.2em 0;
+	}
+	.footer__copy {
+		p {
+			margin: 0 auto;
+			text-align: center;
+			line-height: 1.5;
+		}
+		ul {
+			display: none;
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,7 +90,7 @@
 	}
 	
 	.header--main {
-		padding: 1em 0;
+		padding: .3em 0 1em;
 	}
 	.header__respons--btn {
 		display: inline-block;
@@ -128,8 +150,28 @@
 		font-size: 1.7em;
 	}
 
+	.main__table--cell {
+		width: 48.5%;
+		padding: 1em;
+		img {
+			width: 300px;
+		}
+	}
+
 	.footer--calls {
 		display: none;
+	}
+	.footer__main--twitter {
+		display: none;
+	}
+	.footer_-main {
+		width: initial;
+		margin: 0 auto;
+		ul {
+			li {
+				font-size: 1em;
+			}
+		}
 	}
 }
 
@@ -145,18 +187,52 @@
 		}
 	}
 
-	.header__banner {
-		height: 250px;
-	}
-	.header__banner--title {
-		h1, h2 {
-			font-size: 1.2em;
-		}
-		h1 {
-			width: 173px;
-		}
-	}
 	.header__prev, .header__next {
+		display: none !important;
+	}
+
+	.main__table--cell {
+		width: 100%;
+		box-shadow: none;
+		border: 1px solid #888888;
+		img {
+			width: 500px;
+		}
+	}
+	.main__table--cell:nth-child(n+3) {
 		display: none;
+	}
+	.main__table--btn {
+		display: block;
+		background-color: $c-secondary;
+		color: $c-background;
+		padding: 0.8em 1.8em;
+		border: none;
+		text-transform: uppercase;
+		margin: .5em auto;
+		font-weight: 600;
+		font-size: 1.2em;
+	}
+
+	.footer__main--info {
+		display: none;
+	}
+	.footer__main--contact {
+		ul {
+			float: left;
+			border-bottom: none;
+		}
+		.g {
+			float: right;
+			display: flex;
+			margin: auto;
+			margin-left: 1em;
+			width: 110px;
+			flex-wrap: wrap;
+			.footer_-contact--icon {
+				font-size: 1.3em;
+				margin:  0 .25em .25em;
+			}
+		}
 	}
 }

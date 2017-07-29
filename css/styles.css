@@ -177,7 +177,7 @@ a {
 .header--slider .slick-dots {
   bottom: 15px; }
   .header--slider .slick-dots li button:before {
-    font-size: 35px; }
+    font-size: 10px; }
 
 .header__banner {
   background-color: #fff;
@@ -336,11 +336,11 @@ a {
   .aside h3 {
     margin: .9em 0; }
   .aside .slick-dots {
-    bottom: -19px; }
+    bottom: -12px; }
     .aside .slick-dots li button {
       color: red; }
       .aside .slick-dots li button:before {
-        font-size: 45px;
+        font-size: 13px;
         color: #4cb1ca; }
 
 .aside--featured, .aside--signup {
@@ -529,8 +529,8 @@ a {
     border-radius: 50%;
     color: #4cb1ca;
     position: relative;
-    top: 10%;
-    left: 50%; }
+    top: 7%;
+    left: 55%; }
     .footer__main--twitter .footer__twitter--icon .fa-twitter:hover {
       opacity: 0.6; }
 
@@ -714,6 +714,19 @@ a {
     padding: 1em; }
     .main__table--cell img {
       width: 300px; }
+  .main__table--cell:nth-child(n+3) {
+    display: none; }
+  .main__table--btn {
+    display: block;
+    background-color: #7db122;
+    color: #fff;
+    padding: 0.8em 1.8em;
+    border: none;
+    text-transform: uppercase;
+    margin: .5em auto;
+    font-weight: 400;
+    font-size: 1.1em;
+    cursor: pointer; }
   .footer--calls {
     display: none; }
   .footer__main--twitter {
@@ -730,6 +743,17 @@ a {
     width: 170px; }
   .header__nav-main--misc input[type='submit'] {
     margin-right: 0; }
+  .header__banner--title {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .header__banner--title h1, .header__banner--title h2 {
+      font-size: 1.4em; }
+    .header__banner--title h1 {
+      width: 202px; }
+    .header__banner--title h2 {
+      width: 258px; }
   .header__prev, .header__next {
     display: none !important; }
   .main__table--cell {
@@ -739,18 +763,6 @@ a {
     border: 1px solid #888888; }
     .main__table--cell img {
       width: 500px; }
-  .main__table--cell:nth-child(n+3) {
-    display: none; }
-  .main__table--btn {
-    display: block;
-    background-color: #7db122;
-    color: #fff;
-    padding: 0.8em 1.8em;
-    border: none;
-    text-transform: uppercase;
-    margin: .5em auto;
-    font-weight: 600;
-    font-size: 1.2em; }
   .footer__main--info {
     display: none; }
   .footer__main--contact ul {

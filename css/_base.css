@@ -1,0 +1,33 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.u-clearfix:before, .u-clearfix:after {
+  content: ' ';
+  display: table; }
+
+.u-clearfix:after {
+  clear: both; }
+
+html {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.o-wrapper {
+  width: 1030px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.o-transition {
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.header__banner--overlay, .o-overlay {
+  height: 100%; }

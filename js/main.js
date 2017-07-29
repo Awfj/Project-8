@@ -58,8 +58,10 @@ $(function() {
 
 	//----------------MAIN-------------------
 	$('.main__table--btn').click(function() {
-		$('.main__table--btn').hide();
-		$('.main__table--cell:nth-child(n+3)').fadeIn(1000);
+		$(this).hide();
+		$(this).siblings('.main__table--cell:nth-child(n+3)').fadeIn(1000);
+		// $(this).siblings('.main__table--cell').show().css('border', '10px solid red');
+
 	});
 
 

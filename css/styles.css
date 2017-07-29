@@ -529,8 +529,8 @@ a {
     border-radius: 50%;
     color: #4cb1ca;
     position: relative;
-    top: 10%;
-    left: 50%; }
+    top: 7%;
+    left: 55%; }
     .footer__main--twitter .footer__twitter--icon .fa-twitter:hover {
       opacity: 0.6; }
 
@@ -714,6 +714,19 @@ a {
     padding: 1em; }
     .main__table--cell img {
       width: 300px; }
+  .main__table--cell:nth-child(n+3) {
+    display: none; }
+  .main__table--btn {
+    display: block;
+    background-color: #7db122;
+    color: #fff;
+    padding: 0.8em 1.8em;
+    border: none;
+    text-transform: uppercase;
+    margin: .5em auto;
+    font-weight: 400;
+    font-size: 1.1em;
+    cursor: pointer; }
   .footer--calls {
     display: none; }
   .footer__main--twitter {
@@ -739,18 +752,6 @@ a {
     border: 1px solid #888888; }
     .main__table--cell img {
       width: 500px; }
-  .main__table--cell:nth-child(n+3) {
-    display: none; }
-  .main__table--btn {
-    display: block;
-    background-color: #7db122;
-    color: #fff;
-    padding: 0.8em 1.8em;
-    border: none;
-    text-transform: uppercase;
-    margin: .5em auto;
-    font-weight: 600;
-    font-size: 1.2em; }
   .footer__main--info {
     display: none; }
   .footer__main--contact ul {

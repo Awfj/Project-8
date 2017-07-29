@@ -177,7 +177,7 @@ a {
 .header--slider .slick-dots {
   bottom: 15px; }
   .header--slider .slick-dots li button:before {
-    font-size: 35px; }
+    font-size: 10px; }
 
 .header__banner {
   background-color: #fff;
@@ -336,11 +336,11 @@ a {
   .aside h3 {
     margin: .9em 0; }
   .aside .slick-dots {
-    bottom: -19px; }
+    bottom: -12px; }
     .aside .slick-dots li button {
       color: red; }
       .aside .slick-dots li button:before {
-        font-size: 45px;
+        font-size: 13px;
         color: #4cb1ca; }
 
 .aside--featured, .aside--signup {
@@ -743,6 +743,17 @@ a {
     width: 170px; }
   .header__nav-main--misc input[type='submit'] {
     margin-right: 0; }
+  .header__banner--title {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .header__banner--title h1, .header__banner--title h2 {
+      font-size: 1.4em; }
+    .header__banner--title h1 {
+      width: 202px; }
+    .header__banner--title h2 {
+      width: 258px; }
   .header__prev, .header__next {
     display: none !important; }
   .main__table--cell {

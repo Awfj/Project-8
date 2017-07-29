@@ -201,6 +201,19 @@
 			margin-right: 0;
 		}
 	}
+	.header__banner--title {
+		left: 50%;
+		transform: translate(-50%, -50%);
+		h1, h2 {
+			font-size: 1.4em;
+		}
+		h1 {
+			width: 202px;
+		}
+		h2 {
+			width: 258px;
+		}
+	}
 
 	.header__prev, .header__next {
 		display: none !important;
